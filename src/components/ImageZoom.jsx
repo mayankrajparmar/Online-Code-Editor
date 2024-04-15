@@ -83,8 +83,8 @@ const ImageZoom = (props) => {
     y = e.pageY - a.top;
 
     /* Consider any page scrolling: */
-    x = x - window.pageXOffset;
-    y = y - window.pageYOffset;
+    x = x - window.pageX;
+    y = y - window.pageY;
 
     return { x: x, y: y };
   };
